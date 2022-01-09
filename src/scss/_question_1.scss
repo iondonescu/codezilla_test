@@ -1,0 +1,23 @@
+.general-wrapper {
+  position: relative;
+  .flex-wrapper {
+    position: relative;
+    background: white;
+    width: 80%;
+    min-height: 500px;
+    .wrapper {
+      border: 1px solid #000;
+      width: 30%;
+      padding: 10px;
+    }
+  }
+  .logo {
+    background: url("/assets/img/cdz_logo.jpg") no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Add your code after this line */
+
