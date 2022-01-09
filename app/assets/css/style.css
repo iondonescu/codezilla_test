@@ -8,7 +8,10 @@
 .copy {
   margin-bottom: 0; 
 }
-
+/* Question 1c */
+p.copy > span {
+  color:green;
+}
 .bg-dark2 {
   background: lightgray; }
 
