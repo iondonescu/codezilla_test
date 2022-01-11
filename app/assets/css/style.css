@@ -1306,3 +1306,7 @@ h2 {
   margin: 10px;
   background: #333;
 }
+/* Question 3b */
+.q2-block:nth-child(odd){
+  background-color: #00FF00;
+}
