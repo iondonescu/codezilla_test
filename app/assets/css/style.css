@@ -21,9 +21,16 @@ justify-content: space-between;
 flex-wrap: wrap;
 
 }
+.flex-container:first-child{
+  position: absolute;
+  top:0;
+}
 .flex-container:last-of-type{
   position: absolute;
   bottom: 0;
+}
+.container > .row{
+height:50%;
 }
 
 .bg-dark2 {
@@ -1279,6 +1286,9 @@ h2 {
   border-radius: 10px;
   margin: 10px 0;
   padding: 20px;
+  height: 200px;/*Question2a */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Add your code after this line */

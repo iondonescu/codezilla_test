@@ -41,14 +41,15 @@
     <div class="general-wrapper">
       <!-- Question 1a- we use bootstrap, so mx-auto class is the appropiate way -->
       <!-- Question 1b add class text-centered-->
-      <div class="flex-wrapper mx-auto text-center">
+      <div class="flex-wrapper d-flex mx-auto text-center">
+        
         <div class="flex-container">
           <div class="wrapper">
             <!--Question 1c Change the color of the text "Text_Box" to green
             in style.css
             -->
             <!-- Question 1d Using "Flexbox" or any other method, move each text box to a different corner of the white background container.
-(text box (1) - top left, text box (2) - top right, text box (3) - bottom left, text box (4) - bottom right) in style.css-->
+            (text box (1) - top left, text box (2) - top right, text box (3) - bottom left, text box (4) - bottom right) in style.css-->
             <p class="copy"><span>Text_Box(1)</span> <br> Lorem Ipsum is simply dummy text of the printing
               and
               typesetting
@@ -63,6 +64,8 @@
             </p>
           </div>
         </div>
+        <!--Question 1e -insert image, set margin x and y auto, make parent flex(class d-flex)-->
+        <img class="mx-auto my-auto" src="assets/img/cdz_logo.jpg" alt="codzilla_logo">
         <div class="flex-container">
           <div class="wrapper">
             <p class="copy"><span>Text_Box(3)</span> <br> Lorem Ipsum is simply dummy text of the printing
@@ -81,7 +84,9 @@
         </div>
 
       </div>
-      <div class="logo"></div>
+      <div class="logo">
+       
+      </div>
     </div>
   </div>
 </section>
@@ -89,13 +94,15 @@
 
 <!-- Question 2 - Start -->
 <section class="section bg-light ">
-  <div class="container">
+  <div class="container" style = "height: 100%;">
     <h3>Question 2</h3>
     <p>a) Align these blocks in a grid system with 2x2 (2columns and 2rows) and make them keep the same height.</p>
     <p>b) Align all the content in the center of the box.</p>
     <p>c) On mobile, align all content in a single column.</p>
-    <div>
-      <div class="q1-box">
+    <!--Question 2a -Align these blocks in a grid system with 2x2 (2columns and 2rows)
+       and make them keep the same height(same height in css class q1-box).-->
+    <div class="row row-flex">
+      <div class="q1-box col">
         <div class="wc-box-icon">
           <i class="mdi">1</i>
         </div>
@@ -103,27 +110,30 @@
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s, when an unknown printer took a galley</p>
       </div>
-      <div class="q1-box">
+      <div class="q1-box col">
         <div class="wc-box-icon">
           <i class="mdi">2</i>
         </div>
         <h5>Lorem ipsum</h5>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
-      <div class="q1-box">
+    </div>
+    <div class="row row-flex">
+      <div class="q1-box col">
         <div class="wc-box-icon">
           <i class="mdi">3</i>
         </div>
         <h5>Lorem ipsum</h5>
         <p>Lorem Ipsum</p>
       </div>
-      <div class="q1-box">
+      <div class="q1-box col">
         <div class="wc-box-icon">
           <i class="mdi">4</i>
         </div>
         <h5>Lorem ipsum</h5>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
       </div>
+    </div>
     </div>
   </div>
 </section>
