@@ -15,23 +15,22 @@ p.copy > span {
 /*Question 1d Using "Flexbox" or any other method, move each text box to a different corner of the white background container.
 (text box (1) - top left, text box (2) - top right, text box (3) - bottom left, text box (4) - bottom right)*/
 
-.flex-container{
-display:flex;
-justify-content: space-between;
-flex-wrap: wrap;
-
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.flex-container:first-child{
+.flex-container:first-child {
   position: absolute;
-  top:0;
+  top: 0;
 }
-.flex-container:last-of-type{
+.flex-container:last-of-type {
   position: absolute;
   bottom: 0;
 }
 
-.container > .row{
-height:50%;
+.container > .row {
+  height: 50%;
 }
 
 .bg-dark2 {
@@ -1287,15 +1286,19 @@ h2 {
   border-radius: 10px;
   margin: 10px 0;
   padding: 20px;
-  height: 200px;/*Question2a */
+  height: 200px; /*Question2a */
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /* Add your code after this line */
 .q2-wrapper {
-  background: #efefef;
   /* Add your code after this line */
+  /*a) Using only css, style the following blocks 
+  to be on a 3x2 (3columns and 2rows) grid having the grey background cover all of them.*/
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background:grey;
 }
 .q2-wrapper .q2-block {
   width: 100px;
