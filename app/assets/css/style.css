@@ -1310,3 +1310,13 @@ h2 {
 .q2-block:nth-child(odd){
   background-color: #00FF00;
 }
+
+@media only screen and (max-width: 768px) {
+  .q2-wrapper{
+    display:grid;
+    grid-template-columns: auto auto;
+  }
+  .q2-block:last-child{
+    display: none;
+  }
+  }
