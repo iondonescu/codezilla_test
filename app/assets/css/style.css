@@ -29,6 +29,7 @@ flex-wrap: wrap;
   position: absolute;
   bottom: 0;
 }
+
 .container > .row{
 height:50%;
 }
